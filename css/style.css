@@ -86,3 +86,8 @@ body {
     text-align: left;
     text-transform: uppercase;
 }
+
+.container form input:last-of-type:hover {
+    color: var(--main-color);
+    background-color: var(--second-color);;
+}
