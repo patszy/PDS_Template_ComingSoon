@@ -28,11 +28,5 @@ window.onload = function() {
 
     let int = setInterval(function() {
         counter();
-
-        if (count < 0) {
-            clearInterval(int);
-            showTime();
-        }
-
     }, 1000);
 }

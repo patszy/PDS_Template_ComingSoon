@@ -3,12 +3,16 @@
     --second-color: #fd3267;
 }
 
-html {
-    font-size: 62.5%;
-}
-
 * {
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%;
 }
 
 body {
@@ -16,24 +20,21 @@ body {
     background-color: black;
     color: var(--main-color);
     font-family: 'Montserrat', sans-serif;
-}
-
-.container {
     background-image: url(../img/Background\ Image.jpg);
     background-size: cover;
     background-position: center;
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     text-align: center;
     text-transform: uppercase;
 }
 
-.container img {
-    margin-top: 100px;
-}
-
 .container h1 {
-    margin: 70px;
+    margin: 70px 0;
     font-size: 6.4rem;
     color: var(--second-color);
 }
@@ -44,7 +45,6 @@ body {
 
 .container__time {
     margin: 70px auto;
-    width: 40%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -61,6 +61,11 @@ body {
     font-size: 1.2rem;
 }
 
+.container form {
+    display: flex;
+    justify-content: space-around;
+}
+
 .container form input {
     border: 1px solid;
     padding: 10px 20px;
@@ -69,9 +74,8 @@ body {
 }
 
 .container form input:first-of-type {
+    width: 50%;
     color: var(--main-color);
-    width: 25%;
-    margin-right: 30px;
 }
 
 .container form input:first-of-type::placeholder {
@@ -82,8 +86,6 @@ body {
 .container form input:last-of-type {
     border-color: var(--second-color);
     color: var(--second-color);
-    width: 15%;
-    text-align: left;
     text-transform: uppercase;
 }
 
